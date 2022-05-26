@@ -146,7 +146,7 @@ body{
 }
 /*---------- Estilos del  Mapa----------*/
 .mapa {
-    padding: 15px ;
+    padding: 30px ;
     background:  #F0EDE5;
     text-align: center;
 }
@@ -154,7 +154,7 @@ body{
     font-size: 25px;
 }
 .mapa p{
-    text-align: justify;
+    text-align: center;
 
 }
 /*--------Estilos del footer--------*/
@@ -171,84 +171,7 @@ body{
     margin-right: 10px;
 
 }
-/*--------Estilos Responsive--------*/
-@media(min-width:480px){
-    .main img{
-    max-width: 90%;
-}
-    .contenedor .banner__titulo{
-        font-size: 44px;
-    }
-    .contenedor .banner__txt{
-        font-size: 25px;
-    }
-	.info__columna{
-        width: 32%;
-    }
-     .info .contenedor{
-    display: flex;
-		 justify-content: space-between;
 
-    }
-
-    .platos .contenedor{
-     display: flex;
-     flex-wrap: wrap;
-     justify-content:space-around;
-}
-    .platos__columna{
-        width:  40%;
-    }
-    .platos h3{
-        font-size: 30px;
-    }
-}
-
-@media(min-width:768px){
-      .platos__columna{
-        width: 24%;
-    }
-}
-
-@media(min-width:1024px){
-	.nav {
-    position: static;
-    width: auto;
-  }
-  .menu {
-    display: flex;
-  }
-  .icon-menu {
-    display: none;
-  }
-	.menu__link{
-		border: none;
-	}
-    .banner .contenedor .banner__titulo{
-        font-size: 50px;
-    }
-     .banner .contenedor .banner__txt{
-        font-size: 36px;
-    }
-    .contenedor{
-        width:1000px;
-    }
-
-}
-@media(min-width:1280px){
-    .contenedor{
-        width: 1200px;
-    }
-     .banner .contenedor .banner__titulo{
-        font-size: 90px;
-
-    }
-     .banner .contenedor .banner__txt{
-        font-size: 46px;
-    }
-
-
-}
 /*-------Estilos del Formulario-----*/
 
 .Formulario-de-contacto {
@@ -312,6 +235,110 @@ body{
 
 .fijar {
     margin-top: -135px;
+
+}
+/*--------Estilos Responsive--------*/
+@media(min-width:480px){
+    .main img{
+    max-width: 90%;
+}
+    .contenedor .banner__titulo{
+        font-size: 44px;
+    }
+    .contenedor .banner__txt{
+        font-size: 25px;
+    }
+	.info__columna{
+        width: 32%;
+    }
+     .info .contenedor{
+    display: flex;
+		 justify-content: space-between;
+
+    }
+    .mapa-responsive{
+
+        overflow:hidden;
+
+        padding-bottom:56.25%;
+
+        position:relative;
+
+        height:0;
+
+    }
+
+    .mapa-responsive iframe{
+
+        left:0;
+
+        top:0;
+
+        height:100%;
+
+        width:100%;
+
+        position:absolute;
+
+    }
+
+
+    .platos .contenedor{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content:space-around;
+}
+    .platos__columna{
+        width:  40%;
+    }
+    .platos h3{
+        font-size: 30px;
+    }
+}
+
+@media(min-width:768px){
+      .platos__columna{
+        width: 24%;
+    }
+}
+
+@media(min-width:1024px){
+	.nav {
+    position: static;
+    width: auto;
+  }
+  .menu {
+    display: flex;
+  }
+  .icon-menu {
+    display: none;
+  }
+	.menu__link{
+		border: none;
+	}
+    .banner .contenedor .banner__titulo{
+        font-size: 50px;
+    }
+     .banner .contenedor .banner__txt{
+        font-size: 36px;
+    }
+    .contenedor{
+        width:1000px;
+    }
+
+}
+@media(min-width:1280px){
+    .contenedor{
+        width: 1200px;
+    }
+     .banner .contenedor .banner__titulo{
+        font-size: 90px;
+
+    }
+     .banner .contenedor .banner__txt{
+        font-size: 46px;
+    }
+
 
 }
 
