@@ -255,6 +255,7 @@ body{
     display: flex;
 		 justify-content: space-between;
 
+
     }
     .mapa-responsive{
         overflow:hidden;
@@ -282,6 +283,12 @@ body{
     }
     .platos h3{
         font-size: 30px;
+    }
+
+    .Formulario-de-contacto{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
 
