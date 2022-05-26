@@ -175,7 +175,7 @@ body{
 /*-------Estilos del Formulario-----*/
 
 .Formulario-de-contacto {
-    width: 500px;
+    width: 400px;
     max-width: 100%;
     margin: auto;
     margin-top: 30px;
@@ -232,16 +232,28 @@ body{
 
 }
 
+.contacto{
+    resize: none;
+    width: 400px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    position: relative;
+    background: rgba(247, 213, 201, 0.438);
+
+}
+
 
 .fijar {
     margin-top: -135px;
 
 }
 /*--------Estilos Responsive--------*/
-@media(min-width:480px){
+@media(min-width:320px){
     .main img{
-    max-width: 90%;
-}
+    max-width: 100%;
+    }
     .contenedor .banner__titulo{
         font-size: 44px;
     }
@@ -277,18 +289,60 @@ body{
      display: flex;
      flex-wrap: wrap;
      justify-content:space-around;
+    }
+    .platos__columna{
+        width:  40%;
+    }
+    .platos h3{
+        font-size: 20px;
+    }
 }
+
+@media(min-width:480px){
+    .main img{
+    max-width: 90%;
+    }
+    .contenedor .banner__titulo{
+        font-size: 44px;
+    }
+    .contenedor .banner__txt{
+        font-size: 25px;
+    }
+	.info__columna{
+        width: 32%;
+    }
+     .info .contenedor{
+    display: flex;
+		 justify-content: space-between;
+
+
+    }
+    .mapa-responsive{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+    }
+
+    .mapa-responsive iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+
+
+    .platos .contenedor{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content:space-around;
+    }
     .platos__columna{
         width:  40%;
     }
     .platos h3{
         font-size: 30px;
-    }
-
-    .Formulario-de-contacto{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
     }
 }
 
@@ -323,6 +377,7 @@ body{
     }
 
 }
+
 @media(min-width:1280px){
     .contenedor{
         width: 1200px;
@@ -335,8 +390,4 @@ body{
         font-size: 46px;
     }
 
-
 }
-
-
-
